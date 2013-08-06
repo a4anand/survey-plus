@@ -57,14 +57,7 @@
 			
 			
 
-			<%-- <input type="radio" name="radio_survey" value="social">Social
-			<br>
-			<input type="radio" name="radio_survey" value="professional">Professional
-			<br>
-			<input type="radio" name="radio_survey" value="educational">Educational
-			<br>
 			
-			<td><form:input  path="radio_survey" /></td> --%>
 			
 			<tr>
 

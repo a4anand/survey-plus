@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.beans.User;
 import com.dao.UserSpringJdbcDao;
 import com.form.LoginForm;
+import com.form.SurveyType;
 
 @Controller
 public class LoginController {
@@ -26,6 +27,13 @@ public class LoginController {
 		return "loginform";
 	}
 	
+	@RequestMapping(value={"surveytypecheck.html"} , method = RequestMethod.POST)
+	public String processTypeSelection(SurveyType surveyType, BindingResult result,Map model) {
+		 surveyType = (SurveyType) model.get("surveyType");
+		model.put("surveyType", surveyType);
+		return "questions";
+	}
+	
 	@RequestMapping(value={"logincheck.html"}, method = RequestMethod.POST)
 	public String processForm( LoginForm loginForm, BindingResult result,
 			Map model) {
@@ -37,6 +45,8 @@ public class LoginController {
 		List<User> listOfUsers = SpringJdbcDao.listUsers();  
 		for (User user : listOfUsers) {
 			if(user.getUser_id().equals(loginForm.getUserName()) && user.getPassword().equals(loginForm.getPassword())){
+				SurveyType surveyType=new SurveyType();
+				model.put("surveyType", surveyType);
 				model.put("loginForm", loginForm);
 				return "loginsuccess";
 			}

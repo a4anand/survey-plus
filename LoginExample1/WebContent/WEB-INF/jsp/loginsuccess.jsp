@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -22,20 +23,33 @@
 		<core:out value="${loginForm.userName}" />
 		<%-- <core:out value="${loginForm.survey_type}" /> --%>
 	</h3>
-	<tr>
 
-				<td>Choose survey type:<FONT color="red"><form:errors
-							path="survey_type" /></FONT></td>
+	<form:form action="surveytypecheck.html" commandName="surveyType">
+		<tr>
 
-			</tr>
 
-			<tr>
+			<td>Choose survey type:<FONT color="red"><form:errors
+						 /></FONT> </td>
 
-				<form:radiobutton path="survey_type" value="S"/>Social 
-				<form:radiobutton path="survey_type" value="P"/>Professional
-				<form:radiobutton path="survey_type" value="E"/>Educational
+		</tr><BR><BR>
 
-			</tr>
+		 
+			<br>
+			<td><form:radiobutton path="type" value="S" />Social </td>
+			<br>
+			<td> <form:radiobutton path="type" value="P" />Professional</td>
+			<br>
+			<td><form:radiobutton path="type" value="E"  />Educational</td>
+			<br><br>
+
+		</tr> 
+
+		<tr>
+
+			<td><input type="submit" value="Submit" /></td>
+
+		</tr>
+	</form:form>
 	<table>
 
 		<tr>
