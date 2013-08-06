@@ -31,8 +31,6 @@ public class LoginController {
 	@RequestMapping(value={"logincheck.html"}, method = RequestMethod.POST)
 	public String processForm( LoginForm loginForm, BindingResult result,
 			Map model) {
-		String userName = "root";
-		String password = "root";
 		if (result.hasErrors()) {
 			return "loginform";
 

@@ -20,6 +20,7 @@
 	<h3>
 		Welcome
 		<core:out value="${loginForm.userName}" />
+		<core:out value="${loginForm.survey_type}" />
 	</h3>
 
 	<table>

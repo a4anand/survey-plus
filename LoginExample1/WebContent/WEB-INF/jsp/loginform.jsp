@@ -20,9 +20,7 @@
 
 	<h3>Login Form</h3>
 
-	<FONT color="blue">
-
-		<!-- <h5>User Name="root" and Password="root"</h5> -->
+	<FONT color="blue"> <!-- <h5>User Name="root" and Password="root"</h5> -->
 
 	</FONT>
 
@@ -55,7 +53,32 @@
 				<td><form:password path="password" /></td>
 
 			</tr>
+			
+			<tr>
 
+				<td>Choose survey type:<FONT color="red"><form:errors
+							path="survey_type" /></FONT></td>
+
+			</tr>
+
+			<tr>
+
+				<form:radiobutton path="survey_type" value="S"/>Social 
+				<form:radiobutton path="survey_type" value="P"/>Professional
+				<form:radiobutton path="survey_type" value="E"/>Educational
+
+			</tr>
+			
+
+			<%-- <input type="radio" name="radio_survey" value="social">Social
+			<br>
+			<input type="radio" name="radio_survey" value="professional">Professional
+			<br>
+			<input type="radio" name="radio_survey" value="educational">Educational
+			<br>
+			
+			<td><form:input  path="radio_survey" /></td> --%>
+			
 			<tr>
 
 				<td><input type="submit" value="Submit" /></td>
