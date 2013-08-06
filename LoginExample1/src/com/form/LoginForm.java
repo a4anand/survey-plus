@@ -1,4 +1,4 @@
-package com.test.form;
+package com.form;
 
 /*import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotEmpty;*/

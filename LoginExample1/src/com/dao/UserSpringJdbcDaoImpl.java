@@ -1,4 +1,4 @@
-package dao;
+package com.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import beans.User;
+import com.beans.User;
 @Repository
 public class UserSpringJdbcDaoImpl implements UserSpringJdbcDao {
 	

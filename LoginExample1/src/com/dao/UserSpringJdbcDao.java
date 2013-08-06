@@ -1,7 +1,8 @@
-package dao;
+package com.dao;
 
 import java.util.List;
-import beans.User;
+
+import com.beans.User;
 
 public interface UserSpringJdbcDao {
 	public void insertUser(User user);

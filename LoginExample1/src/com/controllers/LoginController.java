@@ -1,4 +1,4 @@
-package com.test.controllers;
+package com.controllers;
 
 import java.util.List;
 import java.util.Map;
@@ -9,11 +9,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import beans.User;
-
-import com.test.form.LoginForm;
-
-import dao.UserSpringJdbcDao;
+import com.beans.User;
+import com.dao.UserSpringJdbcDao;
+import com.form.LoginForm;
 
 @Controller
 public class LoginController {

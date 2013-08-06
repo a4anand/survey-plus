@@ -1,4 +1,4 @@
-package beans;
+package com.beans;
 
 public class User {
 	private String user_id;
