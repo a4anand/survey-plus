@@ -20,9 +20,22 @@
 	<h3>
 		Welcome
 		<core:out value="${loginForm.userName}" />
-		<core:out value="${loginForm.survey_type}" />
+		<%-- <core:out value="${loginForm.survey_type}" /> --%>
 	</h3>
+	<tr>
 
+				<td>Choose survey type:<FONT color="red"><form:errors
+							path="survey_type" /></FONT></td>
+
+			</tr>
+
+			<tr>
+
+				<form:radiobutton path="survey_type" value="S"/>Social 
+				<form:radiobutton path="survey_type" value="P"/>Professional
+				<form:radiobutton path="survey_type" value="E"/>Educational
+
+			</tr>
 	<table>
 
 		<tr>

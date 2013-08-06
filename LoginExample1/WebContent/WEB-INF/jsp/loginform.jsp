@@ -54,20 +54,7 @@
 
 			</tr>
 			
-			<tr>
-
-				<td>Choose survey type:<FONT color="red"><form:errors
-							path="survey_type" /></FONT></td>
-
-			</tr>
-
-			<tr>
-
-				<form:radiobutton path="survey_type" value="S"/>Social 
-				<form:radiobutton path="survey_type" value="P"/>Professional
-				<form:radiobutton path="survey_type" value="E"/>Educational
-
-			</tr>
+			
 			
 
 			<%-- <input type="radio" name="radio_survey" value="social">Social
