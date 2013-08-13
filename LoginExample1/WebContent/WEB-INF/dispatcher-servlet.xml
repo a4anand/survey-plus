@@ -59,9 +59,8 @@
 	 <bean id="SpringJdbcDao" class="com.dao.UserSpringJdbcDaoImpl">
 		<property name="dataSource" ref="dataSource" />
 	</bean> 
-
-	<!-- <bean id="SpringJdbcService" class="service.UserSpringJdbcServiceImpl">
-		<property name="springJdbcDao" ref="SpringJdbcDao" />
-	</bean> -->
+    <bean id="SpringQuestionJdbcDao" class="com.dao.QuestionSpringJdbcDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>  
 
 </beans>
