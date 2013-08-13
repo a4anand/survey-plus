@@ -41,6 +41,11 @@ public class LoginController {
 		QuestionForm question = new QuestionForm();
 		Question que = SpringQuestionJdbcDao.getQuestion(1, "1");
 		question.setQuestion(que.getQuestion());
+		question.setOpt1(que.getOpt1());
+		question.setOpt2(que.getOpt2());
+		question.setOpt3(que.getOpt3());
+		question.setOpt4(que.getOpt4());
+		
 		//System.out.println("questtion  == "+que.getQuestion());
 		model.put("questionForm", question);
 		

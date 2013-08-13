@@ -38,22 +38,22 @@
 
 			<tr>
 
-				<td><form:radiobutton path="option"  /><core:out value="${questionForm.question}" /></td>
+				<td><form:radiobutton path="option"  /><core:out value="${questionForm.opt1}" /></td>
 
 			</tr>
 			<tr>
 
-				<td><form:radiobutton path="option"  />Answer2</td>
+				<td><form:radiobutton path="option"  /><core:out value="${questionForm.opt2}" /></td>
 
 			</tr>
 			<tr>
 
-				<td><form:radiobutton path="option"  />Answer3</td>
+				<td><form:radiobutton path="option"  /><core:out value="${questionForm.opt3}" /></td>
 
 			</tr>
 			<tr>
 
-				<td><form:radiobutton path="option"  />Answer4</td>
+				<td><form:radiobutton path="option"  /><core:out value="${questionForm.opt4}" /></td>
 
 			</tr>
 
