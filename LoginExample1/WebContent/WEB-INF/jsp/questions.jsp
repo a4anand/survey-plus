@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
-<core:out value="${surveyType.type}" />
+<%--  <core:out value="${surveyType.type}" /> --%> 
 </head>
 <body>
 
